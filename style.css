@@ -1,0 +1,202 @@
+/* Fondasi tampilan halaman */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px 15px;
+    background-color: #f3eee7;
+    color: #39332f;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.6;
+}
+
+/* Kartu halaman utama */
+.page {
+    max-width: 880px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 24px;
+    background-color: #fffdf9;
+    box-shadow: 0 10px 30px rgba(77, 52, 36, 0.16);
+}
+
+/* Gaya judul bagian yang bisa dipakai berulang */
+.heading {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px dotted #e69b55;
+    color: #344e41;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Gaya tombol utama */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: #d97745;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #344e41;
+}
+
+/* Header dan navigasi */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+    background-color: #344e41;
+}
+
+.brand {
+    color: #ffffff;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 24px;
+}
+
+.brand span {
+    margin-left: 6px;
+    color: #f2c078;
+}
+
+nav a {
+    margin-left: 18px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #fffdf9;
+    color: #344e41;
+}
+
+/* Bagian pengenalan */
+#hero {
+    padding: 55px 35px;
+    background-color: #f8f1e7;
+    text-align: center;
+}
+
+.logo-circle {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border: 4px solid #e69b55;
+    border-radius: 50%;
+    background-color: #fffdf9;
+    color: #344e41;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 82px;
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+    color: #b7653b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#hero h2 {
+    margin-bottom: 12px;
+    color: #344e41;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 32px;
+}
+
+#hero p:not(.eyebrow) {
+    max-width: 500px;
+    margin: 0 auto 25px;
+}
+
+/* Kumpulan kartu layanan */
+#layanan {
+    padding: 50px 35px;
+}
+
+.service-list {
+    display: flex;
+    gap: 18px;
+}
+
+.service-card {
+    flex: 1;
+    padding: 22px;
+    border-top: 5px solid #344e41;
+    border-radius: 14px;
+    background-color: #f7f3ed;
+}
+
+.number {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 2px 12px;
+    border-radius: 20px;
+    background-color: #d97745;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.service-card h3 {
+    margin-bottom: 8px;
+    color: #344e41;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Area kontak dan hak cipta */
+footer {
+    padding: 25px;
+    background-color: #344e41;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contact {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Penyesuaian layar kecil */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 0 4px;
+    }
+
+    #hero {
+        padding: 40px 20px;
+    }
+
+    #hero h2 {
+        font-size: 24px;
+    }
+
+    #layanan {
+        padding: 35px 20px;
+    }
+
+    .service-list {
+        flex-direction: column;
+    }
+}
